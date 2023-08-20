@@ -14,9 +14,27 @@ class app extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'CATALOG',
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.yellowAccent,
-        ),
+       body: Container(
+        width: double.infinity,
+        child:Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+           Image.asset(
+              'assets/images/360-Logo.png',
+              width: 220,
+              height: 220,
+              ),
+            Text(
+              'ورود به 360',
+              style: TextStyle(
+                color: Colors.blueGrey,
+                fontSize: 20,
+              ),
+            ),
+            
+          ],
+        ) 
+       ),
       ),
     );
   }
