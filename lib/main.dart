@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 void main(){
   runApp(app());
-  
 }
 
 
@@ -11,6 +10,14 @@ class app extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'CATALOG',
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.yellowAccent,
+        ),
+      ),
+    );
   }
 }
