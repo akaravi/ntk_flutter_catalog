@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ntk_flutter_catalog/loginpage.dart';
 
 void main() {
   runApp(pagetest());
@@ -11,11 +12,7 @@ class pagetest extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "catalog",
-      home: Scaffold(
-          appBar: AppBar(
-        backgroundColor: Colors.amber,
-      )),
+      home: loginpage(),
     );
   }
 }
