@@ -49,14 +49,17 @@ class loginpage extends StatelessWidget {
         ),
         Container(
           decoration: BoxDecoration(
-              border: Border.all(width: 3, color: Colors.amber),
-              borderRadius: BorderRadius.all(Radius.circular(20))),
+            border: Border.all(width: 3, color: Colors.amber),
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+          ),
           child: TextField(
-              textAlign: TextAlign.center,
-              decoration: InputDecoration(
-                  hintText: "+ ۹۸ ۹ - -  - - -  - -  - -",
-                  hintStyle: TextStyle(color: Colors.grey),
-                  border: InputBorder.none)),
+            textAlign: TextAlign.center,
+            decoration: InputDecoration(
+                hintText: "+ ۹۸ ۹ - -  - - -  - -  - -",
+                hintStyle: TextStyle(color: Colors.grey),
+                border: InputBorder.none),
+          ),
+          width: 500,
         ),
         Text(
           'عبارت مقابل را وارد کنید',
@@ -95,7 +98,7 @@ class loginpage extends StatelessWidget {
             ),
           ),
           height: 40,
-          width: 300,
+          width: 200,
         ),
         Container(
           decoration: BoxDecoration(
