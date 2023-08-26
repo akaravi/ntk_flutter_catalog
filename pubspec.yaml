@@ -64,6 +64,8 @@ flutter:
     - assets/image/360-camera-(1).png
     - assets/image/360-camera.png
     - assets/image/camera2.png
+    - assets/image/Untitled-1.png
+    - assets/image/Group 7.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

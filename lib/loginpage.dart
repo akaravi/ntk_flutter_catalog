@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,13 +7,20 @@ void main() {
 }
 
 class loginpage extends StatelessWidget {
-  const loginpage({super.key});
+  // const loginpage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.amber,
+        // flexibleSpace: (Container(
+        //   decoration: BoxDecoration(
+        //       image: DecorationImage(
+        //     image: AssetImage('assets/image/Group 7.png'),
+        //     fit: BoxFit.fill,
+        //   )),
+        // )),
       ),
       body: Column(children: [
         Image.asset(
@@ -31,14 +40,71 @@ class loginpage extends StatelessWidget {
           width: 200,
         ),
         Text(
-          "ورود به 360",
+          "ورود به ۳۶۰",
           style: TextStyle(fontSize: 30),
         ),
         Text(
           "تلفن همراه ",
-          style: TextStyle(fontSize: 30),
+          style: TextStyle(color: Colors.grey),
         ),
-        
+        Container(
+          decoration: BoxDecoration(
+              border: Border.all(width: 3, color: Colors.amber),
+              borderRadius: BorderRadius.all(Radius.circular(20))),
+          child: TextField(
+              textAlign: TextAlign.center,
+              decoration: InputDecoration(
+                  hintText: "+ ۹۸ ۹ - -  - - -  - -  - -",
+                  hintStyle: TextStyle(color: Colors.grey),
+                  border: InputBorder.none)),
+        ),
+        Text(
+          'عبارت مقابل را وارد کنید',
+          style: TextStyle(color: Colors.grey),
+        ),
+        Container(
+          decoration: BoxDecoration(
+              border: Border.all(width: 3, color: Colors.amber),
+              borderRadius: BorderRadius.all(Radius.circular(20))),
+          child: TextField(
+            textAlign: TextAlign.center,
+            decoration: InputDecoration(
+                hintText: "- - - - -",
+                hintStyle: TextStyle(color: Colors.grey),
+                border: InputBorder.none),
+          ),
+          width: 150,
+        ),
+        Image.asset(
+          'assets/image/Untitled-1.png',
+          width: 120,
+        ),
+        // side: BorderSide(color: Colors.red, width: 5),
+
+        Container(
+          decoration: BoxDecoration(
+              border: Border.all(width: 5, color: Colors.amber),
+              borderRadius: BorderRadius.all(Radius.circular(40))),
+          child: ElevatedButton(
+            onPressed: () {},
+            child: Text(
+              "ارسال کد",
+              style: TextStyle(color: Colors.black),
+            ),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.amber,
+              
+            ),
+          ),
+          height: 40,
+          width: 300,
+        ),
+        Text(
+          'حساب کاربری ندارید ؟ ثبت نام کنید',
+          style: TextStyle(
+            color: Colors.grey,
+          ),
+        ),
       ]),
     );
   }
