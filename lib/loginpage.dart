@@ -78,9 +78,8 @@ class loginpage extends StatelessWidget {
         Image.asset(
           'assets/image/Untitled-1.png',
           width: 120,
+          alignment: Alignment(10, 20),
         ),
-        // side: BorderSide(color: Colors.red, width: 5),
-
         Container(
           decoration: BoxDecoration(
               border: Border.all(width: 5, color: Colors.amber),
@@ -93,18 +92,28 @@ class loginpage extends StatelessWidget {
             ),
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.amber,
-              
             ),
           ),
           height: 40,
           width: 300,
         ),
-        Text(
-          'حساب کاربری ندارید ؟ ثبت نام کنید',
-          style: TextStyle(
-            color: Colors.grey,
-          ),
-        ),
+        Container(
+          decoration: BoxDecoration(
+              border:
+                  Border(bottom: BorderSide(width: 1, color: Colors.amber))),
+          child: Column(children: [
+            RichText(
+              text: TextSpan(children: [
+                TextSpan(
+                    text: "حساب کاربری ندارید؟",
+                    style: TextStyle(color: Colors.grey)),
+                TextSpan(
+                    text: " ثبت نام ", style: TextStyle(color: Colors.amber)),
+                TextSpan(text: "کنید ", style: TextStyle(color: Colors.grey))
+              ]),
+            )
+          ]),
+        )
       ]),
     );
   }
