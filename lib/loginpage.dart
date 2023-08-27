@@ -110,21 +110,19 @@ class loginpage extends StatelessWidget {
         Container(
           margin: EdgeInsets.only(top: 40),
           decoration: BoxDecoration(
+            color: Colors.amber,
             border: Border.all(width: 5, color: Colors.amber),
-            borderRadius: BorderRadius.all(Radius.circular(20)),
+            borderRadius: BorderRadius.all(
+              Radius.circular(40),
+            ),
           ),
-          child: ElevatedButton(
-            onPressed: () {},
-            child: Text(
-              "ارسال کد",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w900,
-                  color: Colors.grey),
-            ),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.amber,
-            ),
+          child: Text(
+            "ارسال کد",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontSize: 25,
+                color: Color.fromARGB(255, 160, 160, 160),
+                fontWeight: FontWeight.w900),
           ),
           height: 60,
           width: 250,
