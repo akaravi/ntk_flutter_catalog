@@ -57,7 +57,7 @@ class loginpage extends StatelessWidget {
             color: Color.fromARGB(46, 158, 158, 158),
             border: Border.all(width: 3, color: Colors.amber),
             borderRadius: BorderRadius.all(
-              Radius.circular(20),
+              Radius.circular(40),
             ),
           ),
           child: TextField(
@@ -94,7 +94,7 @@ class loginpage extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromARGB(46, 158, 158, 158),
                   border: Border.all(width: 3, color: Colors.amber),
-                  borderRadius: BorderRadius.all(Radius.circular(20))),
+                  borderRadius: BorderRadius.all(Radius.circular(40))),
               child: TextField(
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
