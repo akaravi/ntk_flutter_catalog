@@ -44,14 +44,21 @@ class loginpage extends StatelessWidget {
           style: TextStyle(
               fontSize: 30, fontWeight: FontWeight.w900, color: Colors.grey),
         ),
-        Text(
-          "تلفن همراه ",
-          style: TextStyle(color: Colors.grey),
+        Container(
+          margin: EdgeInsets.only(left: 200, top: 20, bottom: 20),
+          child: Text(
+            "تلفن همراه ",
+            style: TextStyle(
+                color: Colors.grey, fontSize: 15, fontWeight: FontWeight.w900),
+          ),
         ),
         Container(
           decoration: BoxDecoration(
+            color: Color.fromARGB(46, 158, 158, 158),
             border: Border.all(width: 3, color: Colors.amber),
-            borderRadius: BorderRadius.all(Radius.circular(20)),
+            borderRadius: BorderRadius.all(
+              Radius.circular(20),
+            ),
           ),
           child: TextField(
             textAlign: TextAlign.center,
@@ -63,19 +70,29 @@ class loginpage extends StatelessWidget {
           width: 300,
           margin: EdgeInsets.only(left: 100, right: 100),
         ),
-        Text(
-          'عبارت مقابل را وارد کنید',
-          style: TextStyle(color: Colors.grey),
+        Container(
+          margin: EdgeInsets.only(left: 200, top: 20, bottom: 20),
+          child: Text(
+            'عبارت مقابل را وارد کنید',
+            style: TextStyle(
+                color: Colors.grey, fontSize: 15, fontWeight: FontWeight.w900),
+          ),
         ),
 
         Row(
           children: [
-            Image.asset(
-              'assets/image/Untitled-1.png',
-              width: 120,
+            Container(
+              margin: EdgeInsets.only(left: 50),
+              child: Image.asset(
+                'assets/image/Untitled-1.png',
+                width: 150,
+                height: 50,
+              ),
             ),
             Container(
+              margin: EdgeInsets.only(left: 50),
               decoration: BoxDecoration(
+                  color: Color.fromARGB(46, 158, 158, 158),
                   border: Border.all(width: 3, color: Colors.amber),
                   borderRadius: BorderRadius.all(Radius.circular(20))),
               child: TextField(
@@ -91,6 +108,7 @@ class loginpage extends StatelessWidget {
         ),
 
         Container(
+          margin: EdgeInsets.only(top: 40),
           decoration: BoxDecoration(
             border: Border.all(width: 5, color: Colors.amber),
             borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -112,6 +130,7 @@ class loginpage extends StatelessWidget {
           width: 250,
         ),
         Container(
+          margin: EdgeInsets.only(top: 40),
           decoration: BoxDecoration(
               border:
                   Border(bottom: BorderSide(width: 1, color: Colors.amber))),
