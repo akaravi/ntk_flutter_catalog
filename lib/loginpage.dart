@@ -23,25 +23,26 @@ class loginpage extends StatelessWidget {
         // )),
       ),
       body: Column(children: [
-        Image.asset(
-          'assets/image/360-camera-(1).png',
-          width: 30,
-        ),
-        Image.asset(
-          'assets/image/360-camera.png',
-          width: 30,
-        ),
-        Image.asset(
-          'assets/image/camera2.png',
-          width: 30,
-        ),
+        // Image.asset(
+        //   'assets/image/360-camera-(1).png',
+        //   width: 30,
+        // ),
+        // Image.asset(
+        //   'assets/image/360-camera.png',
+        //   width: 30,
+        // ),
+        // Image.asset(
+        //   'assets/image/camera2.png',
+        //   width: 30,
+        // ),
         Image.asset(
           'assets/image/360-Logo.png',
           width: 200,
         ),
         Text(
           "ورود به ۳۶۰",
-          style: TextStyle(fontSize: 30),
+          style: TextStyle(
+              fontSize: 30, fontWeight: FontWeight.w900, color: Colors.grey),
         ),
         Text(
           "تلفن همراه ",
@@ -59,46 +60,56 @@ class loginpage extends StatelessWidget {
                 hintStyle: TextStyle(color: Colors.grey),
                 border: InputBorder.none),
           ),
-          width: 500,
+          width: 300,
+          margin: EdgeInsets.only(left: 100, right: 100),
         ),
         Text(
           'عبارت مقابل را وارد کنید',
           style: TextStyle(color: Colors.grey),
         ),
+
+        Row(
+          children: [
+            Image.asset(
+              'assets/image/Untitled-1.png',
+              width: 120,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                  border: Border.all(width: 3, color: Colors.amber),
+                  borderRadius: BorderRadius.all(Radius.circular(20))),
+              child: TextField(
+                textAlign: TextAlign.center,
+                decoration: InputDecoration(
+                    hintText: "- - - - -",
+                    hintStyle: TextStyle(color: Colors.grey),
+                    border: InputBorder.none),
+              ),
+              width: 150,
+            ),
+          ],
+        ),
+
         Container(
           decoration: BoxDecoration(
-              border: Border.all(width: 3, color: Colors.amber),
-              borderRadius: BorderRadius.all(Radius.circular(20))),
-          child: TextField(
-            textAlign: TextAlign.center,
-            decoration: InputDecoration(
-                hintText: "- - - - -",
-                hintStyle: TextStyle(color: Colors.grey),
-                border: InputBorder.none),
+            border: Border.all(width: 5, color: Colors.amber),
+            borderRadius: BorderRadius.all(Radius.circular(20)),
           ),
-          width: 150,
-        ),
-        Image.asset(
-          'assets/image/Untitled-1.png',
-          width: 120,
-          alignment: Alignment(10, 20),
-        ),
-        Container(
-          decoration: BoxDecoration(
-              border: Border.all(width: 5, color: Colors.amber),
-              borderRadius: BorderRadius.all(Radius.circular(40))),
           child: ElevatedButton(
             onPressed: () {},
             child: Text(
               "ارسال کد",
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.grey),
             ),
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.amber,
             ),
           ),
-          height: 40,
-          width: 200,
+          height: 60,
+          width: 250,
         ),
         Container(
           decoration: BoxDecoration(
@@ -109,10 +120,13 @@ class loginpage extends StatelessWidget {
               text: TextSpan(children: [
                 TextSpan(
                     text: "حساب کاربری ندارید؟",
-                    style: TextStyle(color: Colors.grey)),
+                    style: TextStyle(color: Colors.grey, fontSize: 20)),
                 TextSpan(
-                    text: " ثبت نام ", style: TextStyle(color: Colors.amber)),
-                TextSpan(text: "کنید ", style: TextStyle(color: Colors.grey))
+                    text: " ثبت نام ",
+                    style: TextStyle(color: Colors.amber, fontSize: 20)),
+                TextSpan(
+                    text: "کنید ",
+                    style: TextStyle(color: Colors.grey, fontSize: 20))
               ]),
             )
           ]),
