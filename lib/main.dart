@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:ntk_flutter_catalog/login1.dart';
 
 void main() {
-  runApp(test());
+  runApp(const MyApp());
 }
 
-class test extends StatelessWidget {
-  const test({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp (
-      home: Scaffold(
-        
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      // theme: ThemeData(fontFamily: 'Noto'),
+      home: Login1()
     );
   }
 }
