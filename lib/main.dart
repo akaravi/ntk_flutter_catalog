@@ -13,6 +13,8 @@ class runpage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: "catalog",
+      
       home: loginpage(),
     );
   }
