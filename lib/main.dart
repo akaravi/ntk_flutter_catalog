@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ntk_flutter_catalog/codepage.dart';
 import 'package:ntk_flutter_catalog/loginpage.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class pagetest extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: loginpage(),
+      home: codepage(),
     );
   }
 }
