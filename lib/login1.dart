@@ -66,11 +66,70 @@ class Login1 extends StatelessWidget {
               ),
             ),
             Container(
-              child: Column(
+              width: 270,
+              height: 55,
+              child: Row(
                 children: [
                   Container(
                     child: Image.asset('assets/images/Untitled-1.png'),
-                  )
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 50, left: 10),
+                    decoration: BoxDecoration(
+                        color: Color.fromARGB(46, 158, 158, 158),
+                        border: Border.all(width: 3, color: Colors.amber),
+                        borderRadius: BorderRadius.circular(30)),
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      decoration: InputDecoration(
+                          hintText: ' - - - - -',
+                          hintStyle: TextStyle(
+                            color: Color.fromARGB(255, 176, 167, 167),
+                          ),
+                          border: InputBorder.none),
+                    ),
+                  ),
+                  Container(
+                    width: 270,
+                    height: 55,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text(
+                        'ارسال کد',
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 108, 103, 103),
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 270,
+                    height: 55,
+                    child: Column(
+                      children: [
+                        Text(
+                          'حساب کاربری ندارید؟',
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Color.fromARGB(255, 176, 167, 167)),
+                        ),
+                        ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            'ثبت نام',
+                            style: TextStyle(color: Colors.amber),
+                          ),
+                        ),
+                        Text(
+                          'کنید',
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Color.fromARGB(255, 176, 167, 167)),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             )
