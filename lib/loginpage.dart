@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:ntk_flutter_catalog/codepage.dart';
 
 void main() {
   runApp(loginpage());
@@ -105,7 +106,9 @@ class loginpage extends StatelessWidget {
               margin: EdgeInsets.only(top: 40),
               child: ElevatedButton(
                 onPressed: () {
-                  
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return codepage();
+                  }));
                 },
                 child: Text(
                   "ارسال کد",
