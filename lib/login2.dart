@@ -19,17 +19,14 @@ class Login2 extends StatelessWidget {
             Container(
               alignment: Alignment.topLeft,
               margin: EdgeInsets.only(top: 15, left: 15),
-              child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return Login1();
-                    }));
-                  },
-                  child: Icon(
-                    Icons.arrow_back,
-                    color: Color.fromARGB(255, 108, 103, 103),
-                  )),
+              child: IconButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return Login1();
+                  }));
+                },
+                icon: Icon(Icons.arrow_back),
+              ),
             ),
             Container(
               width: double.infinity,
