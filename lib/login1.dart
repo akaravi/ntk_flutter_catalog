@@ -12,7 +12,7 @@ class Login1 extends StatelessWidget {
         backgroundColor: Color.fromRGBO(254, 208, 1, 1),
       ),
       body: Container(
-          margin: EdgeInsets.only(top: 40),
+          margin: EdgeInsets.only(top: 30),
           child: Column(
             children: [
               Container(
@@ -31,7 +31,7 @@ class Login1 extends StatelessWidget {
                     fontSize: 30,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 20),
               Container(
                 alignment: Alignment.topRight,
                 margin: EdgeInsets.only(right: 40),
@@ -70,7 +70,7 @@ class Login1 extends StatelessWidget {
               ),
               Container(
                 width: 300,
-                height: 70,
+                height: 60,
                 child: Row(
                   children: [
                     Container(
